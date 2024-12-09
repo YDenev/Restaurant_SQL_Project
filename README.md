@@ -70,13 +70,9 @@ Key analysis questions include:
 
 ### 8. What is the date range of the orders table?
 
-8.1 Using Min() and Max()
+Using Min() and Max()
 
 ![Q81](https://github.com/user-attachments/assets/4e8a9ec9-89b5-4d36-bd87-78fa018014f7)
-
-8.2 Using window functions
-
-![Q82](https://github.com/user-attachments/assets/3a0926b2-0038-417b-b420-b8c2ade3f0ec)
 
 ### 9. How many orders were made within this data range?
 
