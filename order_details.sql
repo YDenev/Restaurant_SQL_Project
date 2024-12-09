@@ -4,24 +4,11 @@ SELECT * FROM order_details;
 
 -- 2. What is the date range of the table?
 
--- Option 1: Using Min() and Max()
+-- Using Min() and Max()
 
 SELECT MIN(order_date) AS starting_date, 
 MAX(order_date) AS last_date 
 FROM order_details;
-
--- Option 2: Using window functions
-SELECT
-	-- Window 1
-    (SELECT order_date FROM order_details
-	ORDER BY order_date
-	LIMIT 1) AS starting_date,
-    -- Window 2
-    (SELECT order_date FROM order_details
-	ORDER BY order_date DESC
-	LIMIT 1) AS last_date
-    FROM order_details
-    LIMIT 1;
 
 -- 3. How many orders were made within this data range?
 
